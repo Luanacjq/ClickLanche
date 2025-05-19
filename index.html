@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClickLanche</title>
+
+  <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="js/script.js" />
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a href="#home" class="logo"><img src="https://static.vecteezy.com/system/resources/previews/053/367/264/non_2x/delicious-bacon-cheeseburger-with-lettuce-and-tomato-transparent-background-free-png.png" alt="ClickLanche Logo" /></a>
+      <nav class="nav">
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Início</a></li>
+    <li><a href="#cardapio">Cardápio</a></li>
+    <li><a href="#quem-somos">Quem Somos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-img">
+        <img src="https://static.vecteezy.com/system/resources/previews/053/367/264/non_2x/delicious-bacon-cheeseburger-with-lettuce-and-tomato-transparent-background-free-png.png" alt="Banner Hambúrguer" />
+    </div>
+    <div class="container">
+      <div class="hero-text">
+        <h1>O Sabor que Conquista</h1>
+        <p>Descubra lanches artesanais com um toque especial. Experimente o melhor da ClickLanche!</p>
+        <a href="#cardapio" class="btn">Ver Cardápio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature-box">
+        <i class="fas fa-burger"></i>
+        <h3>Ingredientes Premium</h3>
+        <p>Nossos hambúrgueres são feitos com carne 100% selecionada e temperos especiais.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-truck"></i>
+        <h3>Entrega Rápida</h3>
+        <p>Peça pelo site e receba em casa sem demora. Atendimento ágil e seguro.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-headphones-alt"></i>
+        <h3>Atendimento Amigável</h3>
+        <p>Estamos sempre prontos para tirar dúvidas e garantir a melhor experiência.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="cardapio">
+
+
+    <h2>Nosso Cardápio</h2>
+    <div class="container">
+      <div class="menu-items">
+        <div class="item">
+          <img src="https://png.pngtree.com/png-clipart/20231017/original/pngtree-burger-food-png-free-download-png-image_13329455.png" alt="Burger" />
+          <h4>Clássico Click</h4>
+          <p>R$22,00</p>
+        </div>
+        <div class="item">
+          <img src="https://static.vecteezy.com/system/resources/previews/053/367/264/non_2x/delicious-bacon-cheeseburger-with-lettuce-and-tomato-transparent-background-free-png.png" alt="Burger" />
+          <h4>Click Bacon</h4>
+          <p>R$25,50</p>
+        </div>
+        <div class="item">
+          <img src="https://i.pinimg.com/originals/35/e8/a9/35e8a985c883999ce1270edc58dd3cbe.png" alt="Burger" />
+          <h4>Click Veggie</h4>
+          <p>R$23,90</p>
+        </div>
+        <div class="item">
+          <img src="https://png.pngtree.com/png-vector/20241102/ourmid/pngtree-mouth-watering-fresh-chicken-burger-for-culinary-use-png-image_14208543.png" alt="Burger" />
+          <h4>Click Camarão</h4>
+          <p>R$29,90</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="about" id="quem-somos">
+
+
+  <div class="container">
+    <div class="about-img">
+      <img src="https://www.cardapio.donnagulla.com.br/wp-content/uploads/2023/02/pasteis.png" alt="Sobre Nós" />
+    </div>
+    <div class="about-text">
+      <h2>ENTRE NO PARAÍSO DO HAMBURGUER 🍔</h2>
+      <p>A Vida É Muito Curta Para Não Comer Um Hamburguer HOJE!!!</p>
+      <ul>
+        <li><i class="fas fa-check"></i> MELHOR PREÇO</li>
+        <li><i class="fas fa-check"></i> MELHOR SERVIÇO</li>
+        <li><i class="fas fa-check"></i> INGREDIENTES FRESCOS</li>
+        <li><i class="fas fa-check"></i> PÃES ASSADOS</li>
+        <li><i class="fas fa-check"></i> QUEIJO NATURAL</li>
+        <li><i class="fas fa-check"></i> VEGETAIS E NÃO VEGETAIS</li>
+      </ul>
+      <a href="#" class="btn">Consulte Mais Informações</a>
+    </div>
+  </div>
+</section>
+
+  <section class="contact" id="contato">
+
+
+      <h2>Entre em contato</h2>
+      <form class="form">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="4" placeholder="Sua mensagem"></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 ClickLanche - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
