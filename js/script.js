@@ -1,29 +1,28 @@
-// MENU MOBILE TOGGLE
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+// Navbar
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+ 
+menu.onclick = () => {
+    navbar.classList.toggle('active');
+}
+ 
+window.onscroll = () => {
+    navbar.classList.remove('active');
+}
+ 
+// Scroll Reveal
+const sr = ScrollReveal ({
+    origin: 'top',
+    distance: '40px',
+    duration: 2000,
+    reset: false
 });
-
-// SCROLL SUAVE NOS LINKS DO MENU
-const links = document.querySelectorAll('.nav-links a');
-
-links.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    const href = link.getAttribute('href');
-    const target = document.querySelector(href);
-
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-
-    // Fecha o menu mobile após clicar
-    navLinks.classList.remove('active');
-  });
-});
+ 
+ 
+sr.reveal(`.home-text, .home-img,
+            .about-img, .about-text,
+            .box, .s-box,
+            .btn, .connect-text,
+            .contact-box`, {
+    interval: 200
+})

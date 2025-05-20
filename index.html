@@ -1,143 +1,220 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ClickLanche</title>
-
-  <link rel="icon" href="./img/favicon.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickLanche</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header class="main-header">
-    <div class="container">
-      <a href="#home" class="logo"><img src="https://static.vecteezy.com/system/resources/previews/053/367/264/non_2x/delicious-bacon-cheeseburger-with-lettuce-and-tomato-transparent-background-free-png.png" alt="ClickLanche Logo" /></a>
-      <nav class="nav">
-  <div class="menu-toggle" id="menu-toggle">
-    <i class="fas fa-bars"></i>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">ClickLanche</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </header>
+
+    <!-- Seção Início -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>ClickLanche</h1>
+            <h2>A comida saborosa <br> do seu jeito</h2>
+            <a href="#menu" class="btn">Ver Cardápio</a>
+        </div>
+        <div class="home-img">
+            <img src="css/assets/hamburguer.png" alt="">
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://controlenamao.com.br/blog/wp-content/uploads/2024/10/20240711145350-quais-equipamentos-sua-lanchonete-precisa.webp" alt="">
+        </div>
+        <div class="about-text">
+          <span>Sobre Nós</span>
+          <h2>Paixão por sabor, compromisso com você</h2>
+          <p>No ClickLanche, acreditamos que cada mordida deve ser uma experiência inesquecível. Unimos ingredientes frescos, receitas autênticas e muito carinho para entregar refeições que encantam o paladar e aquecem o coração.  
+            <br><br>Fundado com o propósito de levar praticidade e sabor até você, nosso time está sempre buscando inovar, atender com excelência e transformar sua refeição em um momento especial. Seja para um lanche rápido ou um encontro com amigos, o ClickLanche é a escolha certa!</p>
+            <a href="#" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+<section class="menu" id="menu">
+  <div class="heading">
+    <span>Cardápio</span>
+    <h2>Delícias da semana</h2>
   </div>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Início</a></li>
-    <li><a href="#cardapio">Cardápio</a></li>
-    <li><a href="#quem-somos">Quem Somos</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
 
-    </div>
-  </header>
-
-  <section class="hero" id="home">
-    <div class="hero-img">
-        <img src="https://static.vecteezy.com/system/resources/previews/053/367/264/non_2x/delicious-bacon-cheeseburger-with-lettuce-and-tomato-transparent-background-free-png.png" alt="Banner Hambúrguer" />
-    </div>
-    <div class="container">
-      <div class="hero-text">
-        <h1>O Sabor que Conquista</h1>
-        <p>Descubra lanches artesanais com um toque especial. Experimente o melhor da ClickLanche!</p>
-        <a href="#cardapio" class="btn">Ver Cardápio</a>
+  <div class="menu-container">
+    <!-- Box 1 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://burgerkingfrance.twic.pics/img/products/e/96/e9654551-7895-4b72-b7a0-61fea2ab9ccf_?twic=v1/contain=700x700" alt="Cheeseburger Clássico">
       </div>
+      <h2>Cheeseburger Clássico</h2>
+      <h3>Pão, carne, queijo e sabor inconfundível.</h3>
+      <span>R$12,90</span>
+      <i class='bx bx-cart-alt'></i>
     </div>
-  </section>
 
-  <section class="features">
-    <div class="container">
-      <div class="feature-box">
-        <i class="fas fa-burger"></i>
-        <h3>Ingredientes Premium</h3>
-        <p>Nossos hambúrgueres são feitos com carne 100% selecionada e temperos especiais.</p>
+    <!-- Box 2 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://d3sn2rlrwxy0ce.cloudfront.net/_800x600_crop_center-center_none/Stacker-DP-1.png?mtime=20221203101410&focal=none&tmtime=20241024164409" alt="Duplo Bacon">
       </div>
-      <div class="feature-box">
-        <i class="fas fa-truck"></i>
-        <h3>Entrega Rápida</h3>
-        <p>Peça pelo site e receba em casa sem demora. Atendimento ágil e seguro.</p>
-      </div>
-      <div class="feature-box">
-        <i class="fas fa-headphones-alt"></i>
-        <h3>Atendimento Amigável</h3>
-        <p>Estamos sempre prontos para tirar dúvidas e garantir a melhor experiência.</p>
-      </div>
+      <h2>Duplo Bacon</h2>
+      <h3>Dois hambúrgueres, muito bacon e cheddar.</h3>
+      <span>R$18,50</span>
+      <i class='bx bx-cart-alt'></i>
     </div>
-  </section>
 
-  <section class="menu" id="cardapio">
-
-
-    <h2>Nosso Cardápio</h2>
-    <div class="container">
-      <div class="menu-items">
-        <div class="item">
-          <img src="https://png.pngtree.com/png-clipart/20231017/original/pngtree-burger-food-png-free-download-png-image_13329455.png" alt="Burger" />
-          <h4>Clássico Click</h4>
-          <p>R$22,00</p>
-        </div>
-        <div class="item">
-          <img src="https://static.vecteezy.com/system/resources/previews/053/367/264/non_2x/delicious-bacon-cheeseburger-with-lettuce-and-tomato-transparent-background-free-png.png" alt="Burger" />
-          <h4>Click Bacon</h4>
-          <p>R$25,50</p>
-        </div>
-        <div class="item">
-          <img src="https://i.pinimg.com/originals/35/e8/a9/35e8a985c883999ce1270edc58dd3cbe.png" alt="Burger" />
-          <h4>Click Veggie</h4>
-          <p>R$23,90</p>
-        </div>
-        <div class="item">
-          <img src="https://png.pngtree.com/png-vector/20241102/ourmid/pngtree-mouth-watering-fresh-chicken-burger-for-culinary-use-png-image_14208543.png" alt="Burger" />
-          <h4>Click Camarão</h4>
-          <p>R$29,90</p>
-        </div>
+    <!-- Box 3 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://raw.githubusercontent.com/hdpngworld/HPW/main/uploads/6528f9ac2dd11-Classic%20veg%20burger%20hd%20png.png" alt="Veggie Burger">
       </div>
+      <h2>Veggie Burger</h2>
+      <h3>Hambúrguer vegetal com alface e molho especial.</h3>
+      <span>R$16,00</span>
+      <i class='bx bx-cart-alt'></i>
     </div>
-  </section>
 
- <section class="about" id="quem-somos">
-
-
-  <div class="container">
-    <div class="about-img">
-      <img src="https://www.cardapio.donnagulla.com.br/wp-content/uploads/2023/02/pasteis.png" alt="Sobre Nós" />
+    <!-- Box 4 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://png.pngtree.com/png-vector/20240819/ourmid/pngtree-crispy-chicken-burger-with-french-fries-png-image_13541133.png" alt="Frango Crocante">
+      </div>
+      <h2>Frango Crocante</h2>
+      <h3>Peito de frango empanado com maionese temperada.</h3>
+      <span>R$15,90</span>
+      <i class='bx bx-cart-alt'></i>
     </div>
-    <div class="about-text">
-      <h2>ENTRE NO PARAÍSO DO HAMBURGUER 🍔</h2>
-      <p>A Vida É Muito Curta Para Não Comer Um Hamburguer HOJE!!!</p>
-      <ul>
-        <li><i class="fas fa-check"></i> MELHOR PREÇO</li>
-        <li><i class="fas fa-check"></i> MELHOR SERVIÇO</li>
-        <li><i class="fas fa-check"></i> INGREDIENTES FRESCOS</li>
-        <li><i class="fas fa-check"></i> PÃES ASSADOS</li>
-        <li><i class="fas fa-check"></i> QUEIJO NATURAL</li>
-        <li><i class="fas fa-check"></i> VEGETAIS E NÃO VEGETAIS</li>
-      </ul>
-      <a href="#" class="btn">Consulte Mais Informações</a>
+
+    <!-- Box 5 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://png.pngtree.com/png-vector/20231023/ourmid/pngtree-halloween-burger-with-bbq-sauce-and-potatoes-angle-view-png-image_10320041.png" alt="Barbecue Burger">
+      </div>
+      <h2>Barbecue Burger</h2>
+      <h3>Carne grelhada com molho barbecue e cebola crispy.</h3>
+      <span>R$17,50</span>
+      <i class='bx bx-cart-alt'></i>
+    </div>
+
+    <!-- Box 6 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://cozinhabruta.blogfolha.uol.com.br/files/2019/07/PicanhaBacon.png" alt="Picanha Supreme">
+      </div>
+      <h2>Picanha Supreme</h2>
+      <h3>Hambúrguer de picanha com queijo prato e ovo.</h3>
+      <span>R$21,90</span>
+      <i class='bx bx-cart-alt'></i>
+    </div>
+
+    <!-- Box 7 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://estilocafeina.com.br/wp-content/uploads/2025/04/Super-Cheddar-McMelt-Bacon.png" alt="Cheddar Melt">
+      </div>
+      <h2>Cheddar Melt</h2>
+      <h3>Muito cheddar derretido e cebola caramelizada.</h3>
+      <span>R$16,90</span>
+      <i class='bx bx-cart-alt'></i>
+    </div>
+
+    <!-- Box 8 -->
+    <div class="box">
+      <div class="box-img">
+        <img src="https://api-middleware-mcd.mcdonaldscupones.com/media/image/product$k6XhRUE7/200/200/original?country=br" alt="ClickLanche Especial">
+      </div>
+      <h2>ClickLanche Especial</h2>
+      <h3>Nosso hambúrguer exclusivo com toque da casa.</h3>
+      <span>R$22,00</span>
+      <i class='bx bx-cart-alt'></i>
     </div>
   </div>
 </section>
 
-  <section class="contact" id="contato">
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Serviços</span>
+            <h2>Oferecemos o melhor atendimento</h2>
+        </div>
 
+        <div class="servives-container">
+            <!-- Box 1 -->
+            <div class="s-box">
+              <img src="css/assets/caixa-de-entrega.png" alt="">
+              <h3>Você pede</h3>
+              <p>Escolha seus lanches favoritos no nosso cardápio de forma rápida e prática, direto do seu celular ou computador.</p>
+            </div>
+            <!-- Box 2 -->
+            <div class="s-box">
+              <img src="css/assets/lambreta.png" alt="">
+              <h3>Entregamos</h3>
+              <p>Nosso time sai em disparada para garantir que seu pedido chegue quentinho e no menor tempo possível.</p>
+            </div>
+            <!-- Box 3 -->
+            <div class="s-box">
+              <img src="css/assets/caixa-de-entrega (1).png" alt="">
+              <h3>Receba</h3>
+              <p>Abra a porta e aproveite! Receba sua refeição com toda qualidade e sabor que só o ClickLanche oferece.</p>
+            </div>
+        </div>
+    </section>
 
-      <h2>Entre em contato</h2>
-      <form class="form">
-        <input type="text" placeholder="Seu nome" required />
-        <input type="email" placeholder="Seu e-mail" required />
-        <textarea rows="4" placeholder="Sua mensagem"></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
+    <!-- Rodapé -->
+<footer class="footer" id="contact">
+    <section class="contact">
+        <div class="contact-box">
+            <h3>ClickLanche</h3>
+            <span>Conecte-se conosco</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Links do Menu</h3>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Links Rápidos</h3>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#privacy">Política de Privacidade</a></li>
+            <li><a href="#disclaimer">Aviso Legal</a></li>
+            <li><a href="#terms">Termos de Uso</a></li>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>&#169; ClickLanche. Todos os direitos reservados.</p>
     </div>
-  </section>
+</footer>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 ClickLanche - Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link para o JavaScript -->
+    <script src="js/script.js"></script>
 </body>
-
 </html>
